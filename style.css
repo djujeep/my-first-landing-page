@@ -1,0 +1,33 @@
+body {
+    background-color: #1F2937;
+    margin: 0;
+    padding: 0;
+}
+#head-section {
+    color: white;
+    padding: 30px;
+}
+header {
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+#logo {
+    width: 45px;
+    height: 45px;
+}
+#contact a {
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    font-weight: 500px;
+    align-items: end;
+    margin-left: 20px;
+}
