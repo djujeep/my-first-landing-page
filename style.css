@@ -21,8 +21,9 @@ header {
     height: 100%;
 }
 #logo {
-    width: 45px;
+    width: 35px;
     height: 45px;
+    font-size: 16px;
 }
 #contact a {
     font-size: 15px;
@@ -91,6 +92,85 @@ header {
     width: 80px;
     height: 80px;
     border: 2px solid #4285f4;
-    background-color: lightcoral;
+    border-radius: 10px;
+    margin: 0 auto 10px;
+}
+.info-card p {
+    width: 150px;
+}
+.info-card a {
+    text-decoration: none;
+    color: #1F2937;
+}
+#quote-box {
+    background-color: rgb(229, 231, 235);
+    padding: 80px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+#quote {
+    font-style: italic;
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 auto;
+    color: #6b7280;
+}
+#quotee {
+    text-align: right;
+    font-style: normal;
+    font-weight: bold;
+    color: #374151;
+    margin-top: 20px;
+    margin-right: auto;
+    max-width: 500px;
+    margin-left: auto;
 }
 
+#action {
+width: 80%;                
+max-width: 1000px;         
+height: 100px;             
+margin: 40px auto;         
+background-color: #3882F6; 
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 30px;           
+box-sizing: border-box;
+border-radius: 8px;
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+flex-wrap: wrap;
+gap: 15px;
+}
+#action-content h5 {
+font-size: 18px;
+margin: 0 0 4px 0;
+}
+#action-content p {
+font-size: 14px;
+margin: 0;
+}
+#link a {
+color: white;
+padding: 8px 16px;
+text-decoration: none;
+border-radius: 6px;
+font-weight: bold;
+border: 1px solid white;
+}
+#link a:hover {
+background-color: #e5e7eb;
+color: #111827;
+}
+footer {
+    background-color: #1F2937;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+#copy p {
+    text-align: center;
+}
