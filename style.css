@@ -1,175 +1,255 @@
-body {
-margin: 0;
-padding: 0;
-font-family: 'Roboto', sans-serif;
-}
-#head-section {
-background-color: #1F2937;
-color: white;
-padding: 30px;
-}
-header {
-margin-top: 0;
-padding-top: 0;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-#logo img {
-width: 100%;
-height: 100%;
-}
-#logo {
-width: 35px;
-height: 45px;
-font-size: 16px;
-}
-#contact a {
-font-size: 15px;
-font-style: italic;
-text-decoration: none;
-color: white;
-font-weight: 500px;
-align-items: end;
-margin-left: 20px;
-}
-#content {
-display: flex;
-justify-content: space-between;
-margin-top: 20px;
-}
-#p-content {
-display: flex;
-flex-direction: column;
-width: 20%;
-}
-#p-content p {
-color: lightgray;
-}
-#p-content a {
-color: white;
-text-decoration: none;
-background-color: #3882F6;
-border: 1px solid black;
-text-align: center;
-display: inline-block;
-padding: 10px 20px;
-border-radius: 8px;
-width: 80px;
-height: 60%;
-border: none;
-font-size: 12px;
-}
-#img {
-border: 1px solid black;
-width: 20%;
-text-align: center;
-padding: 90px;
-margin: 20px;
-background-color: rgb(109, 116, 125);
-border: none;
-}
-#infomation {
-background-color: white;
-}
-#information h3 {
-color: #1F2937;
-font-size: 36px;
-font-weight: 900;
-text-align: center;
-}
-#boxes {
-display: flex;
-justify-content: center;
-gap: 20px;
-padding: 20px;
-}
-.info-card {
-text-align: center;
-}
-.box {
-width: 80px;
-height: 80px;
-border: 2px solid #4285f4;
-border-radius: 10px;
-margin: 0 auto 10px;
-}
-.info-card p {
-width: 150px;
-}
-.info-card a {
-text-decoration: none;
-color: #1F2937;
-}
-#quote-box {
-background-color: rgb(229, 231, 235);
-padding: 80px 20px;
-width: 100%;
-box-sizing: border-box;
-position: relative;
-}
-#quote {
-font-style: italic;
-max-width: 500px;
-font-size: 16px;
-line-height: 1.6;
-margin: 0 auto;
-color: #6b7280;
-}
-#quotee {
-text-align: right;
-font-style: normal;
-font-weight: bold;
-color: #374151;
-margin-top: 20px;
-margin-right: auto;
-max-width: 500px;
-margin-left: auto;
+/* ===== BASE STYLES ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+/* ===== HEADER ===== */
+#head-section {
+  background-color: #1F2937;
+  color: white;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#logo {
+  width: 35px;
+  height: 45px;
+}
+
+#logo img {
+  width: 100%;
+  height: auto;
+}
+
+#contact a {
+  font-size: 15px;
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+/* ===== MAIN CONTENT ===== */
+#content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+#p-content {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+
+#p-content p {
+  color: lightgray;
+}
+
+#p-content a {
+  color: white;
+  text-decoration: none;
+  background-color: #3882F6;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#img {
+  flex: 1 1 300px;
+  padding: 90px;
+  margin: 20px;
+  background-color: rgb(109, 116, 125);
+  text-align: center;
+  color: white;
+}
+
+/* ===== INFORMATION SECTION ===== */
+#infomation {
+  background-color: white;
+  padding: 40px 20px;
+}
+
+#information h3 {
+  color: #1F2937;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+}
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.info-card {
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #4285f4;
+  border-radius: 10px;
+  margin: 0 auto 10px;
+}
+
+.info-card p {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.info-card a {
+  text-decoration: none;
+  color: #1F2937;
+  font-weight: bold;
+}
+
+/* ===== QUOTE SECTION ===== */
+#quote-box {
+  background-color: rgb(229, 231, 235);
+  padding: 80px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#quote {
+  font-style: italic;
+  font-size: 16px;
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#quotee {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: bold;
+  color: #374151;
+}
+
+/* ===== CALL TO ACTION ===== */
 #action {
-width: 80%;                
-max-width: 1000px;         
-height: 100px;             
-margin: 40px auto;         
-background-color: #3882F6; 
-color: white;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0 30px;           
-box-sizing: border-box;
-border-radius: 8px;
-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-flex-wrap: wrap;
-gap: 15px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #3882F6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  gap: 15px;
 }
+
 #action-content h5 {
-font-size: 18px;
-margin: 0 0 4px 0;
+  font-size: 18px;
+  margin: 0 0 4px 0;
 }
+
 #action-content p {
-font-size: 14px;
-margin: 0;
+  font-size: 14px;
+  margin: 0;
 }
+
 #link a {
-color: white;
-padding: 8px 16px;
-text-decoration: none;
-border-radius: 6px;
-font-weight: bold;
-border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  border: 1px solid white;
 }
+
 #link a:hover {
-background-color: #e5e7eb;
-color: #111827;
+  background-color: white;
+  color: #111827;
 }
+
+/* ===== FOOTER ===== */
 footer {
-background-color: #1F2937;
-padding: 10px;
-color: white;
-font-weight: bold;
+  background-color: #1F2937;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
-#copy p {
-text-align: center;
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  #p-content,
+  #img {
+    width: 90%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  #boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-card {
+    width: 90%;
+  }
+
+  #quote,
+  #quotee {
+    max-width: 90%;
+    padding: 0 10px;
+  }
+
+  #action {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  #link a {
+    width: 100%;
+    text-align: center;
+  }
 }
